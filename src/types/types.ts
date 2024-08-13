@@ -1,8 +1,7 @@
-import { MEMBER_ACCESS_LEVEL } from "../constants/constants";
+import { MEMBER_ACCESS_LEVEL } from '../constants/constants';
 
 export type MemberAccessLevelKeysType = keyof typeof MEMBER_ACCESS_LEVEL;
-export type MemberAccessLevelValuesType =
-  typeof MEMBER_ACCESS_LEVEL[MemberAccessLevelKeysType];
+export type MemberAccessLevelValuesType = (typeof MEMBER_ACCESS_LEVEL)[MemberAccessLevelKeysType];
 
 export type MemberType = {
   fullName: string;
